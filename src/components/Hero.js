@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MessageCircle, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -56,17 +57,17 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.6 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <a
+                    <Link
                         href="/apply"
                         className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-3 transition-all group"
                     >
                         <MessageCircle size={20} className="fill-current" />
                         Book Now
-                    </a>
-                    <a href="/community" className="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all group">
+                    </Link>
+                    <Link href="/community" className="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all group">
                         Explore the Community
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
 

@@ -7,6 +7,8 @@ import Gallery from "@/components/Gallery";
 import ExperienceGrid from "@/components/ExperienceGrid";
 import CommunityCarousel from "@/components/CommunityCarousel";
 
+import Link from "next/link";
+
 export const metadata = {
     title: "Community | Remote Work & Co-Living Community in Agonda, Goa",
     description:
@@ -47,12 +49,12 @@ export default function CommunityPage() {
                     <p className="text-foreground/60 font-light max-w-xl mx-auto leading-relaxed mb-10">
                         Ready to build the next big thing in paradise? Apply now and we'll reach out with everything you need to know.
                     </p>
-                    <a
+                    <Link
                         href="/apply"
                         className="inline-block bg-primary text-white font-bold rounded-2xl px-12 py-5 hover:scale-[1.02] transition-all shadow-xl shadow-primary/10 text-lg"
                     >
                         Join the Community
-                    </a>
+                    </Link>
                     <p className="mt-8 text-[10px] text-foreground/30 uppercase tracking-[0.2em] font-bold">
                         Next cohort starts May 1st, 2026
                     </p>

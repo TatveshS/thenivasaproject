@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Ticket } from "lucide-react";
+import Link from "next/link";
 
 export default function BookingSection() {
     const perks = [
@@ -60,9 +61,9 @@ export default function BookingSection() {
                     </div>
 
                     <div className="w-full md:w-auto h-full flex flex-col justify-center">
-                        <a href="/apply" className="w-full md:w-64 bg-primary text-white py-6 rounded-2xl font-bold dark:shadow-none shadow-[0_20px_40px_-10px_rgba(61,111,105,0.4)] hover:translate-y-[-4px] transition-all text-center block">
+                        <Link href="/apply" className="w-full md:w-64 bg-primary text-white py-6 rounded-2xl font-bold dark:shadow-none shadow-[0_20px_40px_-10px_rgba(61,111,105,0.4)] hover:translate-y-[-4px] transition-all text-center block">
                             Book Your Stay
-                        </a>
+                        </Link>
                         <p className="text-[10px] text-center mt-4 text-foreground/50 italic">Inclusive of all taxes and community fees</p>
                     </div>
                 </motion.div>

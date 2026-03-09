@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 import RoomCarousel from "@/components/RoomCarousel";
 
@@ -155,12 +156,12 @@ export default function PricingPage() {
                                 ))}
                             </ul>
 
-                            <a href="/apply" className={`w-full py-5 rounded-2xl font-bold transition-all duration-300 text-center block ${tier.highlighted
+                            <Link href="/apply" className={`w-full py-5 rounded-2xl font-bold transition-all duration-300 text-center block ${tier.highlighted
                                 ? "bg-primary text-white shadow-lg shadow-primary/30 hover:scale-[1.02]"
                                 : "border-2 border-foreground/10 hover:border-primary hover:text-primary"
                                 }`}>
                                 {tier.buttonText}
-                            </a>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>
