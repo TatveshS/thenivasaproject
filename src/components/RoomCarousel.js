@@ -2,6 +2,7 @@
 
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import BASE_PATH from "@/lib/basePath";
 
 const images = [
     "/room/Balcony.png",
@@ -17,7 +18,7 @@ const images = [
     "/room/IMG_2262.jpg",
     "/room/dogs.JPG",
     "/room/yogahall1.jpg"
-];
+].map(p => `${BASE_PATH}${p}`);
 
 const CARD_WIDTH = 624; // ~600px card + 24px gap
 

@@ -68,7 +68,7 @@ export const metadata = {
       "A curated work from home community in Agonda, South Goa. Premium WFH stay, co-living & remote work retreat for freelancers, founders and creators.",
     images: [
       {
-        url: "/community/hero.png",
+        url: "/thenivasaproject/community/hero.png",
         width: 1200,
         height: 630,
         alt: "NIVÀSA - Work From Home Community in Agonda, Goa",
@@ -80,7 +80,7 @@ export const metadata = {
     title: "NIVÀSA | Work From Home Community in Goa",
     description:
       "A curated WFH stay & co-living space in Agonda, South Goa for remote workers, freelancers, founders and creators.",
-    images: ["/community/hero.png"],
+    images: ["/thenivasaproject/community/hero.png"],
   },
   robots: {
     index: true,
@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
     description:
       "A curated work from home community and co-living space in Agonda, South Goa for remote workers, freelancers, founders and creators.",
     url: "https://thenivasa.com",
-    image: "/community/hero.png",
+    image: "/thenivasaproject/community/hero.png",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Agonda",

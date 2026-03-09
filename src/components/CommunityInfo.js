@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import BASE_PATH from "@/lib/basePath";
 
 export default function CommunityInfo() {
     return (
@@ -52,7 +53,7 @@ export default function CommunityInfo() {
                     >
                         <div className="relative aspect-[16/10] md:aspect-square overflow-hidden rounded-[2.5rem] shadow-2xl">
                             <img
-                                src="/community/hero.png"
+                                src={`${BASE_PATH}/community/hero.png`}
                                 alt="Nivasa Community"
                                 className="w-full h-full object-cover"
                             />

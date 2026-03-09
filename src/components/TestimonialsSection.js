@@ -2,26 +2,27 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import BASE_PATH from "@/lib/basePath";
 
 const testimonials = [
     {
         name: "Tejas Sheldekar",
         role: "Software Developer — Pune",
-        image: "/testimonials/tejas.jpg",
+        image: `${BASE_PATH}/testimonials/tejas.jpg`,
         text: "Working remotely full-time, I’m always looking for environments where I can stay focused without feeling isolated. NIVÀSA was exactly that. The workspace was quiet, the internet was reliable, and the overall atmosphere naturally encouraged deep work. Being able to take short walks to the beach after long coding sessions helped me reset and stay productive. What stood out most was the community — everyone there was working on something meaningful, which made the experience even better.",
         rating: 5
     },
     {
         name: "Omar",
         role: "Creative Professional",
-        image: "/testimonials/omar.png",
+        image: `${BASE_PATH}/testimonials/omar.png`,
         text: "Tremendous retreat! The rooms were comfortable and the food felt like proper home-cooked meals. The property is peaceful and full of greenery, with happy animals around which adds to the atmosphere. Everything you need is there — warm showers, cool AC rooms, and the beach just a short walk away. What impressed me most was how much the team genuinely cares about the safety and well-being of guests. Easily one of the best-priced retreats for the experience you get. Highly recommended.",
         rating: 5
     },
     {
         name: "Priyansh Deshmukh",
         role: "Software Developer — Bangalore",
-        image: "/testimonials/priyansh.jpg",
+        image: `${BASE_PATH}/testimonials/priyansh.jpg`,
         text: "I came to NIVÀSA to take a break from the constant noise of Bangalore while continuing my remote work. The environment here makes it surprisingly easy to stay focused during the week. Mornings are calm, the workspace is comfortable, and evenings by the beach help you unwind. It quickly started to feel like a small community rather than just a place to stay. If you work remotely and want a peaceful place to reset without pausing your work, NIVÀSA is a great experience.",
         rating: 5
     }

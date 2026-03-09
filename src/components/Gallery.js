@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import BASE_PATH from "@/lib/basePath";
 
 const features = [
     {
         title: "Remote Work Setup",
         description: "Calm work environment with high-speed 5G internet and ergonomic seating.",
-        image: "/room/wfh.JPG"
+        image: `${BASE_PATH}/room/wfh.JPG`
     },
     {
         title: "Beach Lifestyle",
@@ -16,17 +17,17 @@ const features = [
     {
         title: "Nature & Wildlife",
         description: "Lush forests, exotic birds, and secret waterfalls are all around you.",
-        image: "/room/nature.png"
+        image: `${BASE_PATH}/room/nature.png`
     },
     {
         title: "Free Weekends Trip",
         description: "Explore hidden gems, secret waterfalls, and pristine beaches of Goa every weekend.",
-        image: "/community/farm.jpg"
+        image: `${BASE_PATH}/community/farm.jpg`
     },
     {
         title: "Community Kitchen",
         description: "Get free home-style meals and a fully equipped kitchen to cook your favorite dishes with friends.",
-        image: "/room/kitchen_people.png"
+        image: `${BASE_PATH}/room/kitchen_people.png`
     }
 ];
 

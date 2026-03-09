@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
+import BASE_PATH from "@/lib/basePath";
 
 const agondaImages = [
     "/goa_and_beach/backwater.jpg",
@@ -18,8 +19,7 @@ const agondaImages = [
     "/goa_and_beach/pink1.jpg",
     "/goa_and_beach/waterfall2.jpg",
     "/goa_and_beach/IMG_6216.jpg",
-
-];
+].map(p => `${BASE_PATH}${p}`);
 
 const VISIBLE_RANGE = 2; // how many neighbors to show on each side
 
