@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
-  output: "export",
-  basePath: isProd ? "/thenivasaproject" : "",
-  assetPrefix: isProd ? "/thenivasaproject/" : "",
+  ...(isGithubPages && { output: "export" }),
+  basePath: isGithubPages ? "/thenivasaproject" : "",
+  assetPrefix: isGithubPages ? "/thenivasaproject/" : "",
   images: {
     unoptimized: true,
   },
