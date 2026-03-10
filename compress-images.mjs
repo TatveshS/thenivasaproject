@@ -45,6 +45,7 @@ async function compressImage(filePath) {
   try {
     if (ext === ".jpg" || ext === ".jpeg") {
       await sharp(filePath)
+        .rotate()
         .jpeg({ quality: 75, mozjpeg: true })
         .toFile(tmpPath);
 
@@ -65,6 +66,7 @@ async function compressImage(filePath) {
       // Convert PNG to JPEG - saves massive space (PNGs are 6-8MB!)
       const newFileName = join(dir, `${base}.jpg`);
       await sharp(filePath)
+        .rotate()
         .flatten({ background: { r: 255, g: 255, b: 255 } }) // handle transparency
         .jpeg({ quality: 80, mozjpeg: true })
         .toFile(tmpPath);
