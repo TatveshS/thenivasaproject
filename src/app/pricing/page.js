@@ -10,6 +10,20 @@ import RoomCarousel from "@/components/RoomCarousel";
 
 const pricingTiers = [
     {
+        title: "The New Moon",
+        price: "₹12,000",
+        period: "/week",
+        features: [
+            { text: "7 Days Workspace Access", available: true },
+            { text: "All Nivasa Amenities Included", available: true },
+            { text: "24/7 High-Speed Internet", available: true },
+            { text: "Organic Goan Meals Included", available: true },
+            { text: "Add on weekend trips", available: true }
+        ],
+        buttonText: "Book New Moon",
+        highlighted: false
+    },
+    {
         title: "The Full Moon",
         price: "₹36,000",
         period: "/month",
@@ -18,9 +32,10 @@ const pricingTiers = [
             { text: "All Nivasa Amenities Included", available: true },
             { text: "24/7 High-Speed Internet", available: true },
             { text: "Exclusive Networking Events", available: true },
+            { text: "Free weekend trips", available: true },
             { text: "Organic Goan Meals Included", available: true }
         ],
-        buttonText: "Book Full Mode",
+        buttonText: "Book Full Moon",
         highlighted: true
     },
     {
@@ -32,7 +47,7 @@ const pricingTiers = [
             { text: "All Nivasa Amenities Included", available: true },
             { text: "24/7 High-Speed Internet", available: true },
             { text: "Organic Goan Meals Included", available: true },
-            { text: "Free Weekend Trips", available: false }
+            { text: "Add on weekend trips", available: true }
         ],
         buttonText: "Book The Knight",
         highlighted: false
@@ -112,7 +127,7 @@ export default function PricingPage() {
 
             {/* Pricing Tiers Section */}
             <section className="pb-32 relative z-10">
-                <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+                <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
                     {pricingTiers.map((tier, idx) => (
                         <motion.div
                             key={tier.title}

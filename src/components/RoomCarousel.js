@@ -5,16 +5,16 @@ import { useRef } from "react";
 import BASE_PATH from "@/lib/basePath";
 
 const images = [
-    "/room/Balcony.png",
-    "/room/room.png",
+    "/room/Balcony.jpg",
+    "/room/room.jpg",
     "/room/wfh.JPG",
-    "/room/kitchen.png",
-    "/room/nature.png",
+    "/room/kitchen.jpg",
+    "/room/nature.jpg",
     "/room/outsideworkingarea.jpg",
     "/room/washroom.jpg",
-    "/room/kitchen_people.png",
+    "/room/kitchen_people.jpg",
     "/room/IMG_2274.jpg",
-    "/room/working_area.png",
+    "/room/working_area.jpg",
     "/room/IMG_2262.jpg",
     "/room/dogs.JPG",
     "/room/yogahall1.jpg"
@@ -61,6 +61,8 @@ export default function RoomCarousel() {
                             src={img}
                             alt={`Room at Nivasa ${i + 1}`}
                             className="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
                         />
                     </motion.div>
                 ))}

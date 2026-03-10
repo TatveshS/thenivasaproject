@@ -10,11 +10,11 @@ const images = [
     "/community/MARGAO%20(103).jpg",
     "/community/boat1.jpg",
     "/community/boat2.jpg",
-    "/community/common%20area.png",
+    "/community/common%20area.jpg",
     "/community/IMG_3002.jpg",
     "/community/farm.jpg",
-    "/community/hero.png",
-    "/community/kitchen.png",
+    "/community/hero.jpg",
+    "/community/kitchen.jpg",
     "/community/IMG_2235.jpg",
     "/community/IMG_2304.jpg",
     "/community/IMG_3003.jpg",
@@ -70,6 +70,8 @@ export default function CommunityCarousel() {
                             src={img}
                             alt={`Life at Nivasa ${i + 1}`}
                             className="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
                         />
                     </motion.div>
                 ))}

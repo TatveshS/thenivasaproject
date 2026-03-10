@@ -17,7 +17,7 @@ const features = [
     {
         title: "Nature & Wildlife",
         description: "Lush forests, exotic birds, and secret waterfalls are all around you.",
-        image: `${BASE_PATH}/room/nature.png`
+        image: `${BASE_PATH}/room/nature.jpg`
     },
     {
         title: "Free Weekends Trip",
@@ -27,7 +27,7 @@ const features = [
     {
         title: "Community Kitchen",
         description: "Get free home-style meals and a fully equipped kitchen to cook your favorite dishes with friends.",
-        image: `${BASE_PATH}/room/kitchen_people.png`
+        image: `${BASE_PATH}/room/kitchen_people.jpg`
     }
 ];
 
@@ -49,6 +49,8 @@ export default function Gallery() {
                                 src={feature.image}
                                 alt={feature.title}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <h3 className="font-display text-2xl font-bold mb-3">{feature.title}</h3>

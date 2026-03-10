@@ -53,9 +53,11 @@ export default function CommunityInfo() {
                     >
                         <div className="relative aspect-[16/10] md:aspect-square overflow-hidden rounded-[2.5rem] shadow-2xl">
                             <img
-                                src={`${BASE_PATH}/community/hero.png`}
+                                src={`${BASE_PATH}/community/hero.jpg`}
                                 alt="Nivasa Community"
                                 className="w-full h-full object-cover"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
 

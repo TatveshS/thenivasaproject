@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="bg-foreground/[0.02] py-20 px-6 border-t border-foreground/[0.05]">
             <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
                 <div className="text-center">
-                    <h4 className="font-display text-3xl font-bold text-primary mb-4">The Nivasa Project</h4>
+                    <h4 className="font-display text-3xl font-bold text-primary mb-4">The Nivasa project by Om Yoga Shala</h4>
                     <p className="text-sm text-foreground/70 font-light max-w-xs mx-auto">
                         Made with ❤️ for builders in Agonda, South Goa.
                     </p>
@@ -31,7 +31,7 @@ export default function Footer() {
                 </div>
 
                 <div className="text-[10px] text-foreground/40 mt-4">
-                    © {new Date().getFullYear()} The Nivasa Project. All rights reserved.
+                    © {new Date().getFullYear()} The Nivasa project by Om Yoga Shala. All rights reserved.
                 </div>
             </div>
         </footer>

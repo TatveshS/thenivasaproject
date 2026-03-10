@@ -15,7 +15,7 @@ const testimonials = [
     {
         name: "Omar",
         role: "Creative Professional",
-        image: `${BASE_PATH}/testimonials/omar.png`,
+        image: `${BASE_PATH}/testimonials/omar.jpg`,
         text: "Tremendous retreat! The rooms were comfortable and the food felt like proper home-cooked meals. The property is peaceful and full of greenery, with happy animals around which adds to the atmosphere. Everything you need is there — warm showers, cool AC rooms, and the beach just a short walk away. What impressed me most was how much the team genuinely cares about the safety and well-being of guests. Easily one of the best-priced retreats for the experience you get. Highly recommended.",
         rating: 5
     },
@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
                                 "{t.text}"
                             </p>
                             <div className="flex items-center gap-4">
-                                <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full object-cover" />
+                                <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full object-cover" loading="lazy" decoding="async" />
                                 <div>
                                     <h4 className="font-bold text-sm">{t.name}</h4>
                                     <p className="text-[10px] text-foreground/40 uppercase tracking-widest">{t.role}</p>

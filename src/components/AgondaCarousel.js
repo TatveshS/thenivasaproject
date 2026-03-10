@@ -117,6 +117,16 @@ export default function AgondaCarousel() {
                                     if (offset < 0) prev();
                                     else if (offset > 0) next();
                                 }}
+                                drag="x"
+                                dragConstraints={{ left: 0, right: 0 }}
+                                onDragEnd={(_, info) => {
+                                    const swipeThreshold = 50;
+                                    if (info.offset.x > swipeThreshold) {
+                                        prev();
+                                    } else if (info.offset.x < -swipeThreshold) {
+                                        next();
+                                    }
+                                }}
                                 animate={{
                                     rotateY,
                                     x: translateX,
@@ -141,6 +151,8 @@ export default function AgondaCarousel() {
                                     src={agondaImages[index]}
                                     alt={`Goa ${index + 1}`}
                                     className="w-full h-full object-cover"
+                                    loading="lazy"
+                                    decoding="async"
                                     draggable={false}
                                 />
                                 {/* Active card label */}

@@ -248,8 +248,9 @@ ${form.message || "Not provided"}`;
                         </label>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {[
-                                { id: "full-moon", name: "The Full Moon", desc: "28 Days · ₹36,000/month" },
+                                { id: "new-moon", name: "The New Moon", desc: "7 Days · ₹12,000/week" },
                                 { id: "half-knight", name: "The Half Knight", desc: "14 Days · ₹18,000/14 days" },
+                                { id: "full-moon", name: "The Full Moon", desc: "28 Days · ₹36,000/month" },
                             ].map((plan) => (
                                 <button
                                     key={plan.id}
